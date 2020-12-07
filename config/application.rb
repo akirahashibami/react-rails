@@ -35,7 +35,7 @@ module ReactRails
     # rails側から3000ポートのサクセスを許可する
     config.middleware.insert_before 0, Rack::Cors do
       allow do
-        origins 'http://loclhost:3000'
+        origins 'http://localhost:3000'
         resource '*',
         :headers => :any,
         :methods => [:get, :post, :patch, :delete, :options]
